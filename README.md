@@ -34,12 +34,14 @@ Before you begin, ensure you have installed:
 ## 🛠️ Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd react-authentication
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    # or
@@ -47,23 +49,25 @@ Before you begin, ensure you have installed:
    ```
 
 3. **Configure Firebase**
-   
+
    Update the Firebase configuration in `src/firebase.js` with your Firebase project credentials:
+
    ```javascript
    const firebaseConfig = {
-     apiKey: "YOUR_API_KEY",
-     authDomain: "YOUR_AUTH_DOMAIN",
-     databaseURL: "YOUR_DATABASE_URL",
-     projectId: "YOUR_PROJECT_ID",
-     storageBucket: "YOUR_STORAGE_BUCKET",
-     messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-     appId: "YOUR_APP_ID"
+     apiKey: 'YOUR_API_KEY',
+     authDomain: 'YOUR_AUTH_DOMAIN',
+     databaseURL: 'YOUR_DATABASE_URL',
+     projectId: 'YOUR_PROJECT_ID',
+     storageBucket: 'YOUR_STORAGE_BUCKET',
+     messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+     appId: 'YOUR_APP_ID',
    };
    ```
 
 4. **Environment Variables (Recommended)**
-   
+
    Create a `.env.local` file in the root directory:
+
    ```env
    REACT_APP_FIREBASE_API_KEY=your_api_key
    REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
@@ -81,7 +85,9 @@ Before you begin, ensure you have installed:
 ```bash
 npm start
 ```
+
 Starts the development server at [http://localhost:3000](http://localhost:3000)
+
 - Hot reload enabled
 - Console error reporting
 - Source maps for debugging
@@ -91,7 +97,9 @@ Starts the development server at [http://localhost:3000](http://localhost:3000)
 ```bash
 npm test
 ```
+
 Launches Jest test runner in interactive watch mode
+
 - Coverage reports available
 - Supports unit and integration tests
 
@@ -100,7 +108,9 @@ Launches Jest test runner in interactive watch mode
 ```bash
 npm run build
 ```
+
 Creates an optimized production build in the `build` folder
+
 - Minified and bundled assets
 - Hash-based filenames for cache busting
 - Source maps for error tracking
@@ -111,6 +121,7 @@ Creates an optimized production build in the `build` folder
 ```bash
 npm run build && npx source-map-explorer 'build/static/js/*.js'
 ```
+
 Visualize bundle size and optimize imports
 
 ## 📁 Project Structure
@@ -175,6 +186,7 @@ npm run build
 - **E2E Tests**: Full application workflow (recommended: Cypress or Playwright)
 
 Run tests with coverage:
+
 ```bash
 npm test -- --coverage --watchAll=false
 ```
@@ -182,12 +194,15 @@ npm test -- --coverage --watchAll=false
 ## 🐛 Troubleshooting
 
 ### Build fails to minify
+
 Check for non-transpiled dependencies or syntax errors in your code.
 
 ### Firebase connection issues
+
 Verify your Firebase configuration and ensure the project is active in the Firebase Console.
 
 ### Port 3000 already in use
+
 ```bash
 # Use a different port
 PORT=3001 npm start
