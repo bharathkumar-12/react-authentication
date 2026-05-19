@@ -239,3 +239,9 @@ Bharath
 ---
 
 **Note**: Remember to update your Firebase security rules and review Google Cloud billing settings before deploying to production.
+
+---
+
+## Maintenance
+
+Last maintenance update: <!--LAST_UPDATED-->2026-05-19<!--/LAST_UPDATED-->
