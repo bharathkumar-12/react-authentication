@@ -45,6 +45,7 @@ Before you begin, ensure you have installed:
    ```bash
    npm install
    # or
+
    yarn install
    ```
 
@@ -129,19 +130,32 @@ Visualize bundle size and optimize imports
 ```
 react-authentication/
 ├── public/              # Static files
+
 │   ├── index.html      # HTML template
+
 │   ├── manifest.json   # PWA manifest
+
 │   └── robots.txt      # SEO configuration
+
 ├── src/
 │   ├── App.js          # Main application component
+
 │   ├── App.css         # Application styles
+
 │   ├── App.test.js     # Application tests
+
 │   ├── firebase.js     # Firebase configuration
+
 │   ├── index.js        # Application entry point
+
 │   ├── index.css       # Global styles
+
 │   └── setupTests.js   # Test configuration
+
 ├── package.json        # Dependencies and scripts
+
 └── README.md          # Project documentation
+
 ```
 
 ## 🔒 Security Best Practices
@@ -176,7 +190,9 @@ vercel
 
 ```bash
 npm run build
+
 # Drag and drop the build folder to Netlify
+
 ```
 
 ## 🧪 Testing Strategy
@@ -204,7 +220,9 @@ Verify your Firebase configuration and ensure the project is active in the Fireb
 ### Port 3000 already in use
 
 ```bash
+
 # Use a different port
+
 PORT=3001 npm start
 ```
 
